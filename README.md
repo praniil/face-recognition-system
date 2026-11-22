@@ -293,3 +293,7 @@ The first run downloads pretrained weights for FaceNet and alignment models. Con
 ## Responsible use
 
 Face embeddings are biometric data. Obtain informed consent, restrict access to source photos and generated embeddings, define a retention policy, and provide a non-biometric attendance alternative. Before any real deployment, evaluate false accepts and false rejects across the intended population and conditions, add liveness/anti-spoofing controls, and review applicable privacy and biometric-data laws.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
