@@ -293,12 +293,3 @@ The first run downloads pretrained weights for FaceNet and alignment models. Con
 ## Responsible use
 
 Face embeddings are biometric data. Obtain informed consent, restrict access to source photos and generated embeddings, define a retention policy, and provide a non-biometric attendance alternative. Before any real deployment, evaluate false accepts and false rejects across the intended population and conditions, add liveness/anti-spoofing controls, and review applicable privacy and biometric-data laws.
-
-## Suggested next steps
-
-1. Replace working-directory-relative paths with `pathlib.Path(__file__)`-based configuration and add a CLI.
-2. Make gallery creation atomic, support several embeddings per person, and validate empty or malformed galleries.
-3. Add a face tracker so cached labels remain attached to the correct person.
-4. Add an attendance event model with timestamps, uniqueness rules, and explicit database migrations.
-5. Calibrate thresholds from a representative validation set and publish accuracy/latency measurements.
-6. Add unit tests for naming, embedding comparison, and configuration plus integration tests with fixture images.
